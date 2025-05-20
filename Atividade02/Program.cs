@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections.Generic;
 using System.Linq;
 using Atividade02;
@@ -32,7 +33,7 @@ do
 
                 Produto produtoAdicionar = new Produto(descricaoProduto, valorProduto);
                 lista.Add(produtoAdicionar);
-                Console.WriteLine($"Produto Descrição: {descricaoProduto}, Valor: {valorProduto} cadastrado com sucesso!");
+                Console.WriteLine($"Produto Descrição: {descricaoProduto}, Valor: ${valorProduto.ToString("F2", CultureInfo.InvariantCulture)} cadastrado com sucesso!");
            
             break;
 
@@ -71,7 +72,7 @@ do
             var produtoEncontrado = lista.Find(x => x.Descricao.Trim().ToLower() == descricaoPesquisar.Trim().ToLower().ToLower());
             if (produtoEncontrado != null)
             {
-                Console.WriteLine($"Produto encontrado: Descrição: {produtoEncontrado.Descricao}, Valor: {produtoEncontrado.Valor}");
+                Console.WriteLine($"Produto encontrado: Descrição: {produtoEncontrado.Descricao}, Valor: ${produtoEncontrado.Valor.ToString("F2", CultureInfo.InvariantCulture)}");
             }
             else
             {
@@ -84,7 +85,7 @@ do
             var produtoMenorValor = lista.OrderBy(x => x.Valor).FirstOrDefault();
             if (produtoMenorValor != null)
             {
-                Console.WriteLine($"Produto com menor valor: Descrição: {produtoMenorValor.Descricao}, Valor: {produtoMenorValor.Valor}");
+                Console.WriteLine($"Produto com menor valor: Descrição: {produtoMenorValor.Descricao}, Valor: ${produtoMenorValor.Valor.ToString("F2", CultureInfo.InvariantCulture)}");
             }
             else
             {
