@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atividade01", "Atividade01\Atividade01.csproj", "{0596001A-B1D0-45F6-9936-6661B3386525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atividade02", "Atividade02\Atividade02.csproj", "{63AC2AAF-8FFD-4321-8490-8EB065A37379}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{0596001A-B1D0-45F6-9936-6661B3386525}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0596001A-B1D0-45F6-9936-6661B3386525}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0596001A-B1D0-45F6-9936-6661B3386525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63AC2AAF-8FFD-4321-8490-8EB065A37379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63AC2AAF-8FFD-4321-8490-8EB065A37379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63AC2AAF-8FFD-4321-8490-8EB065A37379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63AC2AAF-8FFD-4321-8490-8EB065A37379}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AC247B2-FC57-4F96-AC5B-22194AF7EE46}
 	EndGlobalSection
 EndGlobal

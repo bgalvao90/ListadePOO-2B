@@ -31,7 +31,7 @@ do
             Console.Write("Digite a idade: ");
             int idade = int.Parse(Console.ReadLine());
 
-            if (lista.Any(x => x.RA == RA))
+            if (lista.Any(x => x.RA.Trim().ToLower() == RA.Trim().ToLower()))
             {
                 Console.WriteLine("RA já cadastrado no sistema!");
             }
@@ -54,7 +54,7 @@ do
             Console.Write("Digite o RA que você deseja alterar:");
             string RAAlterado = Console.ReadLine();
 
-            var alunoParaAlterar = lista.Find(x => x.RA == RAAlterado);
+            var alunoParaAlterar = lista.Find(x => x.RA.Trim().ToLower() == RAAlterado.Trim().ToLower());
             if (alunoParaAlterar != null)
             {
                 Console.Write("Digite o novo nome: ");
@@ -75,7 +75,7 @@ do
             Console.Write("Digite um RA que você deseja remover: ");
             string RARemover = Console.ReadLine();
 
-            var alunoParaRemover = lista.Find(x => x.RA == RARemover);
+            var alunoParaRemover = lista.Find(x => x.RA.Trim().ToLower() == RARemover.Trim().ToLower());
             if (alunoParaRemover != null)
             {
                 lista.Remove(alunoParaRemover);
